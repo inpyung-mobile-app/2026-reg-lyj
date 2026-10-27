@@ -17,23 +17,9 @@ class _HomeScreen2State extends State<HomeScreen2> {
         statusBarBrightness: Brightness.dark,
       ),
       child: Scaffold(
+        backgroundColor: Colors.transparent,
           body: Stack(
             children: [
-              Container(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height,
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      colors: [
-                        Color(0xff3C1161),
-                        Color(0xff200A33)
-                      ],
-                      begin: Alignment.topCenter,
-                      end:Alignment.bottomCenter,
-                      stops: const [0.1,1 ]
-                  ),
-                ),
-              ),
               Positioned(
                 left: -2.5,
                 top: -2.5,
