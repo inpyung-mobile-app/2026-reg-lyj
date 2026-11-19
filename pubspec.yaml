@@ -59,6 +59,9 @@ flutter:
     - family: CustomFont
       fonts:
         - asset: assets/mainfont.otf
+    - family: CustomFont2
+      fonts:
+        - asset: assets/NotoSansKR-Regular.ttf
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
