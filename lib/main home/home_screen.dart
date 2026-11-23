@@ -109,7 +109,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: AnimatedSwitcher(
                 duration: const Duration(milliseconds: 500),
                 child: Text(
-                  texts[pageIndex],
+                  texts[pageIndex.clamp(0, 6).toInt()],
                   key: ValueKey(pageIndex),
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -164,6 +164,7 @@ class _HomeScreenState extends State<HomeScreen> {
           4 => BirthField(next: () => setState(() => pageIndex = 5)),
           5 => TimeField(next: () => setState(() => pageIndex = 6)),
           6 => ConfirmField(go: (i) => setState(() { editing = i != 7; pageIndex = i; })),
+          7 => const BlankHome(),
           _ => const SizedBox(),
         },
       ),

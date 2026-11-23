@@ -726,7 +726,7 @@ class ConfirmField extends StatelessWidget {
   }
 
   Widget start() => GestureDetector(
-    onTap: () => print('클릭됨'),
+    onTap: () => go(7),
     child: Container(
       width: 190, height: 60,
       decoration: BoxDecoration(
